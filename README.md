@@ -150,5 +150,6 @@ forza_ansible_proj (folder)
 ## Resources
 
 - [Ansible Documentation Framework](https://docs.ansible.com/ansible/2.5/user_guide/index.html)
+- Image credits for To Do App Frontend (Brian Codex - https://github.com/briancodex/react-todo-app-v1/tree/master/src
 
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
