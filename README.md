@@ -1,4 +1,5 @@
-# Project : Web Page Application (Postgresql-Nodejs-React) deployed on EC2's with Ansible and Docker
+# Project : 
+Web Page Application (Postgresql-Nodejs-React) deployed on an AWS EC2 server with Ansible and Docker
 
 ![To Do App](To-Do-app.png)
 
