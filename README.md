@@ -6,13 +6,11 @@
 
 The Forza Web-Page Application aims to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 control node and 3 EC2's as worker node. These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by Forza Developers and architecture will be created by Forza's AWS & DevOps Team.
 
-## Problem Statement
+## Project Architecture
 
 ![Architecture](ansible-architecture-diagram.png)
 
-- Forza Dev has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Forza Developer team has done with code and DevOps team is going to deploy the app in production environment using ansible.
-
-- Application is coded by Forza's Fullstack development team and given you as DevOps team. Web-page allows users to collect their infos. Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 3000. 
+Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 3000. 
 
 - The Web Application will be deployed using Nodejs and React framework.
 
@@ -28,7 +26,7 @@ The Forza Web-Page Application aims to deploy web-page written Nodejs and React 
 
 - Postgresql, Nodejs and React parts has to be placed in docker container. 
 
-- Your project manager wants the DevOps team to launch an EC2 for each postgresql, nodejs and react docker container. In addition, he asks to write three different playbook groups for this project. 
+- Launch an EC2 for each postgresql, nodejs and react docker container. In addition, write three different playbook groups for this project. 
     - First one is to write playbook to control all process for each worker instance separately. 
     - Second one is to control all process in one playbook without using roles.
     - Third one is to control all process in one playbook using roles
@@ -81,14 +79,12 @@ In the architecture, you can configure your architecture with these conditions,
 
     - Please make sure this instance's security group should be accept traffic from 3000, and 80 dedicated port from anywhere.
 
-  - Last Step 
 
-  ![Architecture](ansible-architecture-diagram.png)
 
 ## Project Skeleton 
 
 ```text
-007:forza_ansible_proj (folder)
+forza_ansible_proj (folder)
 |
 |----Readme.md               # Given to the students (Definition of the project)
 |----todo-app-perm (folder)  # Given to the students (Nodejs and React files)
@@ -103,7 +99,7 @@ In the architecture, you can configure your architecture with these conditions,
 
 ![Todo Web Page](./todo_web.png)
 
-### At the end of the project, following topics are to be covered;
+### Topics Covered in this Project:
 
 - Ansible playbook preparation without roles
 
@@ -123,7 +119,7 @@ In the architecture, you can configure your architecture with these conditions,
 
 - Git & Github for Version Control System
 
-### At the end of the project, you will be able to;
+### This is an excellent project to learn end-to-end Ansible configuration and web deployment. If you complete this project, you will learn how to: 
 
 - Write Ansible playbook in different ways which are without Roles and with Roles
 
