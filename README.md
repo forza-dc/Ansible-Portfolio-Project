@@ -8,7 +8,7 @@ The Forza Web-Page Application aims to deploy web-page written Nodejs and React 
 
 ## Problem Statement
 
-![Project_007](ansible.png)
+![Architecture](ansible-architecture-diagram.png)
 
 - Forza Dev has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Forza Developer team has done with code and DevOps team is going to deploy the app in production environment using ansible.
 
